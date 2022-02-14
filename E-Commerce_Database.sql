@@ -1,4 +1,4 @@
-/* 1)*/create table supplier(supp_id int(3)primary key,supp_name varchar(255),supp_city varchar(255),supp_phone bigint);
+/* 1)*/ create table supplier(supp_id int(3)primary key,supp_name varchar(255),supp_city varchar(255),supp_phone bigint);
        create table customer(cus_id int(3)primary key,cus_name varchar(255),cus_phone bigint,cus_city varchar(255),cus_gender varchar(9));
        create table category(cat_id int(3)primary key,cat_name varchar(255)); 
 	   create table product(pro_id int(3)primary key,pro_name varchar(255),pro_desc varchar(255),cat_id int,foreign key(cat_id) references category(cat_id));
